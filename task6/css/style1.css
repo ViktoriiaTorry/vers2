@@ -1,0 +1,162 @@
+*{
+	margin: 0px; padding: 0px;
+}
+.wrap{
+	width: 620px;
+	height: 350px;
+	background: #dedad8;
+	background: linear-gradient(to top, #f8f7f6, #dedad8);
+
+}
+.circle {
+  border-radius: 50%;
+  background-color: #e54040;
+  box-shadow: inset 0px 0px 5px 0px #b63636; /*для того чтобы перевернуть тень обьекта внутрь - inset*/
+  position: absolute;
+  top: 0px;
+  width: 42px;
+  height: 42px;
+}
+.shopping_cart:hover  .cart_box {
+  opacity:1;
+  visibility:visible;
+  position:absolute;
+}
+.shopping_cart{
+  width: 45px;
+  height: 45px;
+  display:inline-block;
+  z-index:0;
+  position: relative;
+  left: 305px;
+  top: 42px;
+  width: 42px;
+  height: 42px;
+
+}
+.cart_box{
+  opacity:0;
+  visibility: hidden;
+  transition:opacity 2s
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cbcbcb;
+  background-color: #fff;
+  position: relative;
+  margin: auto;
+  top: 70px;
+  left: -110px;
+  width: 250px;
+  height: 159px;
+  border-radius: 5%;
+
+}
+.cart_box:hover {
+  overflow:visible;
+}
+.cart_box::before {
+    content: ''; 
+    position: absolute;
+    left: 122px;
+    top: -28px;
+    border: 8px solid transparent;
+    border-bottom: 20px solid #fafafa;
+   }
+
+#upper-block {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,231,231) 0%, rgb(255,255,255) 100%);/*Создаёт линейный градиент в браузере Firefox.*/
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,231,231) 0%, rgb(255,255,255) 100%);/*Создаёт линейный градиент в браузерах Safari и Chrome.*/
+  box-shadow: 0px 1px 0px 0px rgba(203, 203, 203, 0.8),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.75);
+  position: absolute;
+  width: 250px;
+  height: 45px;
+  border-radius: 6% 6% 0 0 ;
+}
+
+.center-block{
+  width: 224px;
+  height: 100px;
+  top: 50px;
+}
+.fade_line{
+  height: 1px;
+  background: linear-gradient(to right, #fff, #dfdfdf, #fff);
+}
+#items_text, #amount_text{
+  margin: 15px;
+  color: #747474;
+}
+#items_text{
+  float: left;
+  }
+#amount_text{
+  float: right;
+}
+
+.cart{
+  margin: 12px;
+}
+#sum_2504_36 {
+  font-size: 20px;
+  font-family: "Arial";
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  top:60px;
+ }
+#number_36 {
+  font-size: 20px;
+  font-family: "Arial";
+  color: #000;
+  font-weight: bold;
+  position: absolute;
+  top:60px;
+  left: 10px;
+}
+.lower-block{
+  margin: 0px;
+  width: inherit;
+  height: 50px;
+}
+.view_cart{
+  color: red;
+  width: 80px;
+  margin: 15px;
+  position: absolute;
+}
+a{
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  font-family: "Rockwell";
+}
+ #view_cart_a{
+  color: red;
+
+}
+.checkout_box{
+  top:0px;
+  width: 80px;
+  height: 25px;
+  margin: 10px;
+  background: linear-gradient(to bottom, #ef5858, #d62727);
+  border-radius: 6%;
+  float: right;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #d15050;
+  text-align: center;
+  line-height: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
