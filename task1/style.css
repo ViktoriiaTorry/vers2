@@ -17,15 +17,14 @@ a:hover .text-block{
 	white-space: normal;
 }
 .upper-container,.lower-container{
-	height: 60vh;
     background: #f5f1e6;
 	border-bottom: 1px solid grey;
   }
 .upper-container{
-	padding-top: 0;
+	padding-bottom: 200px;
 }
 .lower-container {
-	padding-bottom: 0;
+	padding-top: 200px;
 }
 .block{
 	width: 250px;
