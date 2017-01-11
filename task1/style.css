@@ -16,43 +16,41 @@ a:hover .text-block{
 	height: 50px;
 	white-space: normal;
 }
-.wrap{
-	position:relative;
-	}
-.container{
-	height: 50vh;
+.upper-container,.lower-container{
+	height: 60vh;
     background: #f5f1e6;
 	border-bottom: 1px solid grey;
   }
-.upper-block,.lower-block{
+.upper-container{
+	padding-top: 0;
+}
+.lower-container {
+	padding-bottom: 0;
+}
+.block{
 	width: 250px;
 	height: 270px;
 	border:1px solid grey;
 	background: #f0e9d3;
 	display: inline-block;
 }
-.block-upper-left{
+.upper-left{
 	float: left;
 }
-.block-upper-center{
-	margin-left: 330px;
+.upper-center{
+	margin-left: 350px;
 }
-.block-upper-right{
+.upper-right{
 	float: right;
 }
-.lower-block{
-	position:absolute;
-	bottom:0
-}
-.block-lower-left{
+.lower-left{
 	float: left;
-	left:0;
 }
-.block-lower-center{
-	margin-left: 580px;
+.lower-center{
+	margin-left: 350px;
 	}
-.block-lower-right{
-	right: 0;
+.lower-right{
+	float: right;
 }
 .text-block{
 	width: 249px;
