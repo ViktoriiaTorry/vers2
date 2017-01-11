@@ -21,7 +21,7 @@ a:hover .text-block{
 	}
 .container{
 	height: 50vh;
-        background: #f5f1e6;
+    background: #f5f1e6;
 	border-bottom: 1px solid grey;
   }
 .upper-block,.lower-block{
@@ -62,7 +62,7 @@ a:hover .text-block{
 	border:1px solid grey;
 	white-space: nowrap;
 }
-.innerBlock{
+.inner-block{
 	margin: 15px;
 	background: #4f4949;
 	width: 220px;
