@@ -3,71 +3,106 @@
 	margin: 0;
 }
 body{
-	font-family:  Trebuchet MS, sans-serif;
+	width:100%;
+	height: 100%;
+	background: url("background.png");
+	background-size: cover;
+	min-width: 860px;
+	min-height: 150px;
+	font-family: "TrajanProRegular";
+	font-weight: bold;
+}
+@font-face {
+	font-family: "TrajanProRegular";
+	src: url('fonts/TrajanProRegular.ttf');
+}
+.wrapper{
 	width:100%;
 	height: 100%;
 	}
-.wrapper{
-	background: url("background.png");
-	width: 800px;
-	height: 310px;
-	padding: 5% 0;
-	}
 .circle{
-	line-height: 50px;
 	width: 310px;
 	height: 310px;
-	border-radius: 50%;
-	background: linear-gradient(to bottom, #d05e3f, #8c0101);
 	position: relative;
-	margin: 0 auto;
+	border-radius: 50%;
+	background: linear-gradient(to bottom, #d05e3f, #8b0000);
+	margin: 10% auto;
+	top: 50%;
+	line-height: 40px;
+	z-index: 1;
 }
 .upper-text{
-	font-size: 90px;
-	padding: 90px 70px 30px 80px ;
+	padding: 110px 70px 35px 70px ;
 	color: white;
 	border: 2px #9e0f05;
+	font-size: 100px;
+	font-weight: bold;
+	line-height: 0.4;
+	text-align: center;
+	text-shadow: 0px 0px 3px rgb( 0, 0, 0 );
 }
-.fade-line-1,.fade-line-2{
+.fade-line-upper,.fade-line-lower{
 	margin:0 auto;
 	width: 80%;
 	height: 1.2px;
-	background: linear-gradient(to right, #ab2a1e, #7c0a00, #ab2a1e);
-	box-shadow: 0 0.1px 0 0.1px #fff;
+	background: linear-gradient(to right, #a9281b, #7c0a00, #a9281b);
+	}
+.fade-line-lower{
+	height: 1.3px;
+	width: 40%;
+	background: linear-gradient(to right, #9a150e, #7c0a00, #9a150e);
 }
-.fade-line-2{
+.fade-line-upper-shadow,.fade-line-lower-shadow{
+	margin:0 auto;
+	width: 80%;
+	height: 1px;
+	background: linear-gradient(to right, #a9281b, #c94d41, #a9281b);
+	}
+
+.fade-line-lower-shadow{
 	width: 50%;
+	height: 0.5px;
+	background: linear-gradient(to right, #9a150e, #c94d41, #9a150e);
 	}
 .center-text{
 	text-align: center;
 	font-size: 16px;
 	color: #410602;
-	text-shadow:  1px 1.2px 0px #b1453f;
+	text-shadow:  1px 1.4px 0px #b1453f;
 }
 .lower-text{
-	font-size: 16px;
+	padding: 10px 0 0px 0;
+	font-size: 15px;
 	color: #410602;
 	text-align: center;
 	text-shadow: 1px 1px 0px #b1453f;
 }
-/* создаем часть кривой */
 .circle:before {
 	content: "";
 	position: absolute;
 	bottom: -30px;
 	left: -100px;
-	height: 40px;
-	border-right: 20px solid #c54f35;
-	border-bottom-left-radius: 50px 50px;
-	transform: translate(140px, -281px);
+	height: 38px;
+	border-right: 17px solid #c54f35;
+	border-bottom-left-radius:30px 45px;
+	transform: translate(140px, -282px);
 }
 .circle:after {
 	content: "";
 	position: absolute;
 	bottom: -10px;
-	width: 26px;
+	width: 27px;
 	height: 41px;
-	background: url("background.png") 125% 10%;
-	border-bottom-left-radius: 30px 50px;
-	transform: translate(35px, -286px);
+	background: url("background.png") -30% 20%;
+	border-bottom-left-radius: 55px 80px;
+	transform: translate(30px, -285px);
+}
+.circle-shadow{
+	margin: -10.5% auto;
+	border-radius: 50% ;
+	opacity: 0.6;
+	width: 300px;
+	height: 14px;
+	z-index: 2;
+	background: radial-gradient(ellipse closest-side at 150px 7px, #000, #fff);
 }
