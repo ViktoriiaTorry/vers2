@@ -2,10 +2,6 @@
     padding: 0;
     margin: 0;
   }
-body{
-    min-width: 600px;
-    min-height: 300px;
-}
 div{
     display: block;
 }
@@ -13,62 +9,71 @@ div{
     width: 100%;
     height: 100%;
     min-width: 600px;
-    min-height: 300px;
+    min-height: 200px;
 }
 .header{
     height: 60px;
     border: 3px solid #db8650;
   }
-.layout{
+.container{
     margin-top: 15px;
     position: absolute;
     width: 100% ;
-    background: url("images/bg_line.gif" ) repeat-y;
+    background: url("images/sidebar-center.gif" ) repeat-y;
     height: 100%;
 }
 .sidebar {
     float: left;
     width: 193px;
-    position: relative;
+    position: absolute;
 }
-.c_bl{
+.sidebar-upper{
+    background: url("images/sidebar-upper.gif");
+    width: 193px;
+    height: 50px;
+}
+
+.sidebar-lower{
     left: 0; bottom: 0;
     position: absolute;
-    margin: 0 0 49px -3px;
+    margin: 0 0 53px -3px;
+    background: url("images/sidebar-lower.gif"); width: 193px;height: 60px;
 }
-.c_r{
-    margin-top: 5px;
+.upper-square{
+    background: url('images/square.gif');
+    margin-top: 0px;
+    top: 0;  right: 0;
+    width: 48px; height: 50px;
     position: absolute;
-    right: 0px;
-    }
-.c_r_2{
+   }
+.lower-square{
+    position: relative;
+    background: url("images/square.gif");
+    width: 48px;
+    height: 50px;
     margin-top: -25px;
     float: right;
     bottom: 0;
   }
-.bg_line3{
-    position: absolute;
-    padding: 0px 0 0 0 ;
-    background: url("images/bg_line3.gif" ) repeat-x;
-    width: 100%;height: 70%;
-
+.wave-horizontal{
+    background: url("images/wave-horizontal.gif" ) repeat-x;
+    width: 100%;
+    height: 23px;
  }
-.bg_line3_2{
+.wave-horizontal-lower{
     margin: 0 0 9px 0;
     position: absolute;
     bottom: 0;
     height: 60px;
-
 }
-.bg_line2ie {
+.wave-vertical {
     position: absolute;
-    margin: 2px 0px 0 0;
-    background: url("images/bg_line2ie.gif") repeat-y;
-    width: 23px;
-height: calc(100% - 110px);
+    margin: 0 5px 0 0;
+    background: url("images/wave-vertical.gif") repeat-y;
+    width: 25px;
+    height: calc(100% - 80px);
     right: 0;
-    top: 53px;
-}
+  }
 .footer{
     position: absolute;
     width: 100%;
