@@ -1,62 +1,113 @@
-html, body{
-    width: 100%;
-    height: 100%;
-    margin: 0; padding: 0;
+* {
+  margin: 0; padding: 0;
 }
 .wrap{
+    background: url('images/background_.jpg');
+    height: 620px;
+    background-size: cover;
     position: relative;
-    width: 350px;
-    height: 280px;
-    background: url("images/background.jpg");
 }
 .player{
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 350px;
+    bottom: 0; left: 0;
+    width: 100%;
     height: 60px;
-    opacity: 0.8;
-    background: linear-gradient(#a1a1a1, #8b8b8b 48%, #585858 52%, #232323);
+    opacity: 0.9;
+    z-index: 1;
+    background: linear-gradient(#5b6777, #454e5f 48%, #343d4e 52%, #091b27);
+}
+.player-copy{
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: 60px;
+    opacity: 0.9;
+    z-index: 1;
 }
 .progressbar{
     position: absolute;
     bottom: 60px;
-    width: 350px;
-    height: 5px;
-    background: #404040;
+    width: 100%; height: 3px;
+    background: #1c2127;
+    border: 2px solid #21282e;
 }
-.progressbar-inner{
-    padding: -3px;
-    width:65%;
-    height:100%;
-    box-shadow:inset 0px 2px 1px rgba(255, 255, 255, .5), inset -1px -1px 0px rgba(0, 0, 0, 0.2);
+.progressbar-inner-green{
+    background: linear-gradient(#82cd3d 50%, #6cb42c );
+    width:19%;
+    height: 3px;
+    float: left;
 }
-.progressbar-red .progressbar-inner{
-    background-color: #ff241a;
+.lever{
+    z-index: 2;
+    position: absolute;
+    bottom: 58px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #20272d ;
+    border: 4px solid #e6e8e5;
+    margin:-4px 0 0 18.5%;
+    box-shadow:0px 2px 1px 0;
 }
-.progressbar:hover .progressbar-inner{
-    width:100%;
+.progressbar-inner-red{
+    float: left;
+    background: linear-gradient(#fd7d8a 50%, #f24757);
+    display: inline-block;
+    width:45%;
+    height: 3px;
 }
-.progressbar .progressbar-inner,
-.progressbar:hover .progressbar-inner{
-     transition:width .6s ease-in;
-}
-.icons-sound,.icons-play,.icons-screen{
-    padding: 15px 0;
-    width: 110px;
+.icons-sound,.icons-center,.icons-screen{
     display: inline-block;
 }
+.icons-sound{
+    background: url("images/volume.gif");
+    width: 48px;
+    height: 37px;
+    margin: 12px 10px;
+    float: left;
+}
+.icons-center{
+    position: absolute;
+    padding: 0.5% 40%;
+    width: 150px;
+}
 .icons-screen{
-    float: right;
     width: 80px;
+    margin-top: 10px;
+    float: right;
 }
-img{
-    padding:  0 0px 0 10px;
-    width:20px;
-    height: 20px;
+.fa-fa-play, .fa-fa-forward {
+    color: #fff;
+    padding: 0 0 0 3px;
 }
-button{
-    padding: 0;
-    border: none;
-    background: none;
+.fa-fa-backward,.fa-fa-cog,.expand{
+    color: #fff;
+}
+a.button.backward,a.button.play,a.button.forward{
+    background: linear-gradient(to bottom, #5b6777, #202b41);
+    border: solid 2px #070b16;
+    border-bottom: solid 5px #070b16;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 14px 14px;
+    position: relative;
+    top: -2px;
+}
+a.button:active {
+    background: #434b5b;
+    border: solid 1px #4a4a4a;
+    box-shadow: inset 0 10px 15px 0 #0c192c;
+    top:2px;
+}
+a.button.backward,a.button.forward{
+     padding: 10px 10px;
+ }
+a.button.tools, a.button.screen{
+    background: linear-gradient(to bottom, #5b6777, #202b41);
+    border: solid 3px #070b16;
+    border-radius: 10%;
+    display: inline-block;
+    padding: 9px 9px;
+    position: relative;
+    top: -2px;
 }
