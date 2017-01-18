@@ -55,16 +55,13 @@ form{
   font-family: "HelveticaLT";
 }
 input[type="checkbox"] {
-    appearance: none;
     background-color: #ededed;
     border: 1px solid #d3d3d3;
     cursor: pointer;
     height: 15px;
     width: 15px;
     box-shadow: inset 1px 0.866px 0.85px 0.15px rgba(0, 0, 0, 0.25);
-    vertical-align: top;
-    -webkit-appearance: none;
-}
+  }
 label{
   width: 80px;
   font-size: 12px;
