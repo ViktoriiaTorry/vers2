@@ -5,58 +5,64 @@
 	background-image: url("../images/background.png");
 }
 .menu{
-   top:30px;padding: 0px 0 0 0;
+   top:30px;padding: 2px 0 0 0;
 	margin: auto;
 	position: relative;
-	width: 200px; height: 224px;
-	border-radius: 5%;
+	width: 202px; height: 228px;
+	border-radius: 2%;
 	border: solid 1px #25272b;
-	box-shadow: 0 1px 1px 1px #37393e ;
-	background: linear-gradient(to top,#40424b,#4b4e58);
+	box-shadow: 0 1px 1px 0px #2d2f34;
+	background: linear-gradient(to top,#313339,#4b4e58);
 }
-.menu label { 
-	border-bottom: 1px solid #25272b;
-	box-shadow: 0px 1px 1px #37393e ;
-    font-family:'Arial ';
-  	position: relative;
+@font-face {
+	font-family: "Tahoma";
+	src: url('fonts/ofont.ru_Tahoma.ttf');
+}
+.menu label {
+	box-shadow: 0 1px 1px #37393e ;
+	font-family: "Tahoma";
+	border-bottom: solid 1px #25272b;
+	position: relative;
 	display: block;
-	height: 37px;
+	height: 36px;
 	cursor: pointer;
-	color: #d1d4e1;
-	font-size: 16px;
-	background: linear-gradient(to top,#40424b,#4b4e58);
-}
+	color: #bcbfcb;
+	font-size: 13px;
+	background-image: -webkit-linear-gradient( 90deg, #40424b 0%, #4b4e58 100%);
+	}
 .menu input{
     display: none;
 }
 .menu input:checked ~ #submenu {
     transition: height 0.5s ease-in-out, box-shadow 0.6s linear;
     height: 37px;
-}
+	border: 0.5px solid #2f3135;
+	}
 #submenu {
- 	border-bottom: 1px solid #3a3d41;
+ 	border-bottom: 1px solid #25272b;
     background: #33353b;
-    height: 0px;
+    height: 0;
     border-bottom: none;
     transition: height 0.5s ease-in-out, box-shadow 0.6s linear;
    }
-#submenu:hover{
-	background: linear-gradient(to top,#2d4ac3,#3a60d1);
+#submenu:hover {
+	background: linear-gradient(to top, #2d4ac3, #3a60d1);
 }
 img{
 	padding:  5px 10px;
 }
 .notification{
-	margin:  10px 0px;
+	margin:  10px 0;
 	float: right;
 }
 label#submenu{
-	box-shadow: 0px 0px 2px 0px #1c1e23;
+	box-shadow: 0 0 2px 0 #1c1e23;
 }
  #submenu{
-	padding: 0px 0 0 10px;
+	padding: 0 0 0 10px;
 }
 .triangle{
+	background: transparent;
 	content: '';
 	position: absolute;
 	right: 10px; top: 15px;

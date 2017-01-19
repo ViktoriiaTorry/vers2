@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+div{
+    display: block;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    min-width: 600px;
+    min-height: 200px;
+}
+.header{
+    height: 60px;
+    border: 3px solid #db8650;
+  }
+.container{
+    margin-top: 15px;
+    position: absolute;
+    width: 100% ;
+    background: url("images/sidebar-center.gif" ) repeat-y;
+    height: 100%;
+}
+.sidebar {
+    float: left;
+    width: 193px;
+    position: absolute;
+}
+.sidebar-upper{
+    background: url("images/sidebar-upper.gif");
+    width: 193px;
+    height: 50px;
+}
+
+.sidebar-lower{
+    left: 0; bottom: 0;
+    position: absolute;
+    margin: 0 0 53px -3px;
+    background: url("images/sidebar-lower.gif"); width: 193px;height: 60px;
+}
+.upper-square{
+    background: url('images/square.gif');
+    margin-top: 0px;
+    top: 0;  right: 0;
+    width: 48px; height: 50px;
+    position: absolute;
+   }
+.lower-square{
+    position: relative;
+    background: url("images/square.gif");
+    width: 48px;
+    height: 50px;
+    margin-top: -25px;
+    float: right;
+    bottom: 0;
+  }
+.wave-horizontal{
+    background: url("images/wave-horizontal.gif" ) repeat-x;
+    width: 100%;
+    height: 23px;
+ }
+.wave-horizontal-lower{
+    margin: 0 0 9px 0;
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+}
+.wave-vertical {
+    position: absolute;
+    margin: 0 5px 0 0;
+    background: url("images/wave-vertical.gif") repeat-y;
+    width: 25px;
+    height: calc(100% - 80px);
+    right: 0;
+  }
+.footer{
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    left: 0; bottom: -20px;
+    border: solid 3px #a17d98;
+    height: 50px;
+}
