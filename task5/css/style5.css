@@ -46,8 +46,8 @@ form{
   box-shadow: 0 1.5px white;
 }
 @font-face {
-    font-family: "helvetica-lt-std-light-58807219838d3";
-    src: url("../fonts/helvetica-lt-std-light-58807219838d3.otf");
+    font-family: "helvetica-lt-std-light";
+    src: url("../fonts/helvetica-lt-std-light.otf");
 }
  .text-field{
   margin: 5px 0;
@@ -58,7 +58,7 @@ form{
  ::-webkit-input-placeholder{
   font-size: 15px;
   padding: 0 0 0 10px;
-  font-family: "helvetica-lt-std-light-58807219838d3";
+  font-family: "helvetica-lt-std-light";
   color: rgb( 195, 197, 197 );
   text-align: left;
   text-shadow: 0px 1px 0px rgb( 255, 255, 255 );
@@ -74,7 +74,7 @@ input[type="checkbox"] {
 label{
   width: 80px;
   font-size: 12px;
-  font-family: "HelveticaLT";
+  font-family: "helvetica-lt-std-light";
   color: #7c7c7c;
   text-shadow: 0px 1px 0px #f7f8f8;
 }
