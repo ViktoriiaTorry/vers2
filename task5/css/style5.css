@@ -1,0 +1,111 @@
+*{
+	margin: 0;	padding: 0;
+}
+.wrap{
+    width: 100%;
+    height: 650px;
+    background-image: url("../images/noise.png");
+    background-size: cover;
+}
+.wrap-inner{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    float: left;
+    left:35%;
+    top: 220px;
+}
+.container{
+	position: relative;
+	width: 300px;
+	height: 250px;
+    margin: 0 auto;
+}
+form{
+    width: 300px;
+    height: 230px;
+    position: absolute;
+    border-bottom: 1px solid #c2c3c2;
+    box-shadow: 0 1.5px white;
+}
+.login-here {
+    background-color:transparent;
+    outline: none; border: none;
+    font-size: 30px;
+    font-family: "Arial Narrow";
+    color: #7c7c7c;
+    line-height: 2.2;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+    position: absolute;
+}
+.login{
+  margin: 15px 0;
+  height: 50px;
+  border-bottom: 1px solid #898b8a;
+  box-shadow: 0 1.5px white;
+}
+ .text-field{
+  margin: 5px 0;
+  border: solid  1px;
+  border-color: #E0E3E3;
+  box-shadow: 0px 2px 0px 0px #CED0D0;
+  width: 300px; height: 31px;
+  font-size: 15px;
+  font-family: "HelveticaLT";
+}
+input[type="checkbox"] {
+
+    background-color: #ededed;
+    border: 1px solid #d3d3d3;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    }
+label{
+  width: 80px;
+  font-size: 12px;
+  font-family: "HelveticaLT";
+  color: #7c7c7c;
+  text-shadow: 0px 1px 0px #f7f8f8;
+}
+.icon{
+  float: left;
+  margin-top: 22px;
+}
+ h1{
+  font-size: 15px;
+  font-family: "Calibri";
+  color: #999999;
+  line-height: 1.2;
+  text-align: left;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+  position: absolute;
+}
+ .submit, .reset {
+  width: 65px;
+  height:30px;
+  margin: 0 0 0 40px;
+  padding: 5px;
+  position: absolute;
+  border: 1px solid #E0E3E3;
+  background-image: linear-gradient(to top, rgb(220,221,223) 0%, rgb(241,241,241) 100%);
+  box-shadow: 0px 2px 0px 0px #CED0D0;
+  right: 0px;
+  color: #7c7c7c;
+}
+.reset {
+ right: 70px;
+}
+.google, .facebook, .twitter{
+  margin: 0 10px 0 0;
+  width: 9px;
+  height: 15px;
+}
+.social{
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  right: 0px;
+  bottom: -20px;
+}

@@ -1,54 +1,77 @@
+*{
+	padding: 0;
+	margin: 0;
+}
 body{
-	font-family: Arial;
-}
-
+	font-family: "Vipond Angular";
+	width:100%;
+	height: 100%;
+	background: url("background.png");
+	background-size: cover;
+	}
 .wrapper{
-	width: 600px;
-	height: 600px;
-	position: relative;
-}
+
+	width:100%;
+	height: 100%;
+	}
 .circle{
-
-position: absolute;
-width: 300px;
-height: 300px;
-background: #890000;
-border-radius: 50%;
-background: linear-gradient(to bottom, #d26141, #8c0101);
-text-align: center;
-line-height: 60px;
-
+	line-height: 50px;
+	width: 310px;
+	height: 310px;
+	border-radius: 50%;
+	background: linear-gradient(to bottom, #d05e3f, #8c0101);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -155px;
+	margin-left: -155px;
 }
-.content{
-}
-#p_1{
+.upper-text{
 	font-size: 90px;
-	margin: 90px 0px 15px ;
+	padding: 90px 70px 30px 80px ;
 	color: white;
-	-webkit-text-stroke: 1px #a22610;
+	border: 2px #9e0f05;
 }
-#p_2{
-	font-size: 20px;
-	color: #410602;
-	margin: -15px;
-	text-shadow:  1px 1px 0px #b1453f;
+.fade-line-1,.fade-line-2{
+	margin:0 auto;
+	width: 80%;
+	height: 1.2px;
+	background: linear-gradient(to right, #ab2a1e, #7c0a00, #ab2a1e);
+	box-shadow: 0 0.1px 0 0.1px #fff;
 }
-#p_3{
-	font-size: 20px;
-	color: #410602;
-	margin: 0px;
-	text-shadow:  1px 1px 0px #b1453f;
-	}
-#hr_1{
-	size: 1px;
+.fade-line-2{
 	width: 50%;
-/*	border-bottom-style:groove;*/
-	color: #820e04;
 	}
-
-#hr_2{
-
-	size: 1px;
-	width: 20%;
-	color: #820e04;
-	}
+.center-text{
+	text-align: center;
+	font-size: 16px;
+	color: #410602;
+	text-shadow:  1px 1.2px 0px #b1453f;
+}
+.lower-text{
+	font-size: 16px;
+	color: #410602;
+	text-align: center;
+	text-shadow: 1px 1px 0px #b1453f;
+}
+/* создаем часть кривой */
+.circle:before {
+	content: "";
+	position: absolute;
+	bottom: -30px;
+	left: -100px;
+	height: 41px;
+	border-right: 20px solid #c54f35;
+	border-bottom-left-radius: 50px 50px;
+	transform: translate(140px, -282px);
+}
+.circle:after {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	width: 26px;
+	height: 41px;
+	background: url("background.png") 110% 10%;
+	border-bottom-left-radius: 28px 52px;
+	transform: translate(34px, -287.5px);
+}
